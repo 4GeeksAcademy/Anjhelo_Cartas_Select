@@ -1,1 +1,74 @@
 @import "~bootstrap/dist/css/bootstrap.min.css";
+body {
+  background-color: green;
+  display: inline-block;
+  height: 100vh;
+  padding: 10px;
+}
+.card {
+  display: flex;
+  background-color: white;
+  width: 100px;
+  height: 160px;
+  border-radius: 20px;
+  border: 2px solid black;
+  padding: 0px;
+  grid-template-rows: 1fr 1fr 1fr;
+  margin: 10px 0px;
+  margin-right: 4px;
+}
+h1 {
+  font-size: 40px;
+  padding: 0px 8px;
+}
+
+.card > div:nth-child(1) {
+  display: flex;
+  justify-content: left;
+  align-items: baseline;
+}
+.card > div:nth-child(2) {
+  align-items: center;
+  justify-content: center;
+  display: flex;
+}
+
+.card > div:nth-child(2) h1 {
+  font-size: 40px;
+  padding: 0px;
+  margin: 0px;
+  font-family: serif;
+}
+
+.card > div:nth-child(3) h1 {
+  -webkit-transform: rotate(-180deg);
+}
+
+.card > div:nth-child(3) {
+  display: flex;
+  justify-content: end;
+  align-items: end;
+}
+
+.type-heart {
+  color: red;
+}
+
+.type-diamond {
+  color: red;
+}
+
+.type-spades {
+  color: black;
+}
+
+.type-clubs {
+  color: black;
+}
+.pasos {
+  display: flex;
+  font-size: 23px;
+}
+#divCartasOrdenadas {
+  font-size: 14px;
+}
